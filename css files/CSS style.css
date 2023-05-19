@@ -1,8 +1,77 @@
+:root {
+    --primary-color: #08A6E4;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --color-gray: #A5A5A5;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-light-grey: #F7F7F7;
+    --color-white: #FFFFFF;
+}
+
 * {
    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+
+header {
+    box-shadow: 0 3px 6px rgba(0,0,0, .16);
+    height: 70px;
+
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+
+.logo {
+    color: var(--primary-color);
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 136px;
+
+
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--font-open-sans);
+    margin-right: 136px;
+
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: var(--color-gray);
+    font-weight: 700;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    border-bottom: 4px solid transparent;
+    letter-spacing: 0.205rem;
+    padding: 28px 18px 22px;
+
+}
+
+.nav-link:hover {
+    color: var(--color-black);
+    border-color: var(--primary-color);
+}
+
+.nav-element {
+    padding: 0 26px;
+}
+
+.nav-element:last-child {
+    padding-right: 0;
 }
