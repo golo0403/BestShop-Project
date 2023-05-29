@@ -73,7 +73,7 @@ header {
 .nav-element:last-child {
     padding-right: 0;
 }
-
+/* Opening section */
 .opening-section {
     display: flex;
     flex-direction: column;
@@ -114,3 +114,79 @@ h1 {
 .large-btn {
     padding: 22px 157px;
 }
+
+.opening-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Statistics section */
+
+h2 {
+    font-size: 2.25rem;
+    font-family: var(--font-raleway);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.statistic-container {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.statistics-numbers {
+    font-family: var(--font-raleway);
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 13px;
+}
+
+.statistics-description {
+    font-family: var(--font-raleway);
+    color: var(--color-gray);
+    font-size: 1.06rem;
+    margin-top: 19px;
+    margin-bottom: 121px;
+}
+
+.statistic-decoration {
+    position: absolute;
+    z-index: 50;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+
+.eye-icon {
+    margin-top: 13px;
+}
+
+.circle1 {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: var(--color-redish);
+    position: relative;
+    margin: auto;
+}
+.circle2 {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: relative;
+    margin: auto;
+}
+.circle3 {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: var(--color-green);
+    position: relative;
+    margin: auto;
+}
+
