@@ -301,21 +301,20 @@ h3 {
 
 .double-container {
     display: flex;
-   justify-content: space-between;
-    margin-top: 37px;
+    justify-content: space-between;
 }
 
 .third-benefit {
     width: 620px;
     margin-right: 61px;
-
-
+    margin-bottom: 0;
 }
 
 .trumpet {
     background-color: var(--color-green);
     height: 370px;
     flex-grow: 1;
+    margin-bottom: 0;
 }
 
 .trumpet-image {
@@ -323,5 +322,128 @@ h3 {
     height: 208px;
     position: relative;
     left: 70px;
-
 }
+
+/* Pricing section*/
+
+.pricing {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.pricing-container {
+    width: 1266px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 2.25rem;
+    font-family: var(--font-raleway);
+    text-align: center;
+}
+.pricing-box {
+    border: solid var(--decoration-color) 1px;
+    border-radius: 18px;
+    left: 180px;
+    width: 372px;
+    height: 461px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+}
+
+.limited {
+    font-size: 0.75rem;
+    font-family: var(--font-raleway);
+    font-weight: bold;
+}
+
+.basic-box {
+    --decoration-color: var(--color-redish);
+}
+
+.professional-box {
+    --decoration-color: var(--primary-color);
+    width: 405px;
+    height: 500px;
+    margin: 0 40px;
+    box-shadow: 5px 1px 27px var(--color-primary-shadow);
+}
+
+.professional-list {
+    margin-top: 80px;
+}
+.title-premium {
+    font-size: 1.3125rem;
+}
+.premium-box {
+    --decoration-color: var(--color-green);
+}
+
+.offer-description {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.price {
+    font-size: 2.875rem;
+    font-family: var(--font-open-sans);
+    color: var(--decoration-color);
+    text-align: center;
+    font-weight: 300;
+    margin-top: 25px;
+}
+.limited {
+     text-align: center;
+     margin-top: 15px;
+     font-size: 0.75rem;
+     font-family: var(--font-raleway);
+     font-weight: 700;
+ }
+
+li {
+    font-size: 0.875rem;
+    font-family: var(--font-open-sans);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.list-element::before {
+     content: "";
+     width: 11px;
+     height: 11px;
+     display: inline-block;
+     margin-right: 10px;
+     background-image: url("../assets/Ckechmark-1.svg");
+ }
+
+.not-included::before {
+    background-image: url("../assets/Close.svg");
+}
+
+.pricing-btn {
+    position: relative;
+    bottom: -50px;
+    font-size: 0.8125rem;
+    background-color: var(--decoration-color);
+    border: none;
+    width: 165px;
+    height: 50px;
+}
+
+.basic-list {
+    margin-top: 85px;
+}
+
+.professional-btn {
+    bottom: -70px;
+}
+
