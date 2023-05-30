@@ -10,6 +10,7 @@
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
     --button-radius: 35px;
+    --border-color: #E8E9ED;
 }
 
 * {
@@ -144,6 +145,7 @@ h2 {
     font-weight: bold;
     margin: 0;
     margin-top: 13px;
+    letter-spacing: 0.1875rem;
 }
 
 .statistics-description {
@@ -165,28 +167,161 @@ h2 {
     margin-top: 13px;
 }
 
-.circle1 {
+.circle {
     width: 63px;
     height: 63px;
     border-radius: 50%;
-    background-color: var(--color-redish);
     position: relative;
     margin: auto;
+
+}
+.circle1 {
+    background-color: var(--color-redish);
 }
 .circle2 {
-    width: 63px;
-    height: 63px;
-    border-radius: 50%;
     background-color: var(--primary-color);
-    position: relative;
-    margin: auto;
 }
 .circle3 {
-    width: 63px;
-    height: 63px;
-    border-radius: 50%;
     background-color: var(--color-green);
-    position: relative;
-    margin: auto;
 }
 
+/* Benefits section*/
+
+.benefits {
+    background-color: var(--color-light-grey);
+    width: 100%;
+    padding: 105px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-container {
+    width: 1124px;
+}
+
+.box-benefit {
+    height: 370px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    border: solid 1px var(--border-color);
+    display: flex;
+    margin-bottom: 37px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-family: var(--font-raleway);
+}
+
+.benefits-content {
+    font-family: var(--font-open-sans);
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 1.375rem;
+}
+
+.text {
+    max-width: 416px;
+    height: 188px;
+    margin: 91px 36px;
+}
+.text::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 91px;
+    background-color: var(--decoration-color);
+}
+.first-benefit {
+    --decoration-color: var(--color-redish);
+}
+
+.second-benefit {
+    --decoration-color: var(--primary-color);
+}
+
+.third-benefit {
+    --decoration-color: var(--color-green);
+}
+
+.element {
+    position: relative;
+}
+
+.benefit-img {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 38px;
+    margin-right: 118px;
+}
+
+.macbook-image {
+    width: 386px;
+    height: auto;
+}
+.laptop-triangle::before {
+    content: "";
+    display: block;
+    height: 180px;
+    width: 180px;
+    background-color: var(--decoration-color);
+    border-radius: 40px;
+    position: absolute;
+    right: 120px;
+    top: -40px;
+    transform: rotate(45deg);
+}
+
+.iphone-image {
+    width: 426px;
+    height: auto;
+    position: relative;
+    top: 25px;
+    left: 70px;
+
+}
+
+.iphone-circle::before {
+    content: "";
+    display: block;
+    background-color: var(--decoration-color);
+    border-radius: 50%;
+    height: 320px;
+    width: 320px;
+    left: 0;
+    position: absolute;
+    bottom: 40px;
+    margin-left: 70px;
+}
+
+.double-container {
+    display: flex;
+   justify-content: space-between;
+    margin-top: 37px;
+}
+
+.third-benefit {
+    width: 620px;
+    margin-right: 61px;
+
+
+}
+
+.trumpet {
+    background-color: var(--color-green);
+    height: 370px;
+    flex-grow: 1;
+}
+
+.trumpet-image {
+    width: 296px;
+    height: 208px;
+    position: relative;
+    left: 70px;
+
+}
